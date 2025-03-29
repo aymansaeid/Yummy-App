@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDeliveryAppTest.Server", "FoodDeliveryAppTest.Server\FoodDeliveryAppTest.Server.csproj", "{68803E6D-79AC-4170-A6F4-0D00E0F10491}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "fooddeliveryapptest.client", "fooddeliveryapptest.client\fooddeliveryapptest.client.esproj", "{52AE1E8A-310B-456D-8BCC-4039FFD8EC30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68803E6D-79AC-4170-A6F4-0D00E0F10491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68803E6D-79AC-4170-A6F4-0D00E0F10491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68803E6D-79AC-4170-A6F4-0D00E0F10491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68803E6D-79AC-4170-A6F4-0D00E0F10491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AE1E8A-310B-456D-8BCC-4039FFD8EC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AE1E8A-310B-456D-8BCC-4039FFD8EC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AE1E8A-310B-456D-8BCC-4039FFD8EC30}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{52AE1E8A-310B-456D-8BCC-4039FFD8EC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AE1E8A-310B-456D-8BCC-4039FFD8EC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AE1E8A-310B-456D-8BCC-4039FFD8EC30}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D083B60-A7C8-4913-B6D4-51152B636B30}
+	EndGlobalSection
+EndGlobal
