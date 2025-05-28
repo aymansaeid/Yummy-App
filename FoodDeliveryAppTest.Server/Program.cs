@@ -20,6 +20,13 @@ namespace FoodDeliveryAppTest.Server
             builder.Services.AddDbContext<DBCONTEXT>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("sqlConnection")));
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    policy => policy.AllowAnyOrigin()
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod());
+            });
             var app = builder.Build();
 
             app.UseDefaultFiles();
@@ -33,6 +40,10 @@ namespace FoodDeliveryAppTest.Server
             }
 
             app.UseHttpsRedirection();
+
+
+            // Enable CORS
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
