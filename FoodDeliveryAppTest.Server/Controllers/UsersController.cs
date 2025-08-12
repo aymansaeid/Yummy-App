@@ -125,7 +125,19 @@ namespace FoodDeliveryAppTest.Server.Controllers
 
             return Ok("Registration successful.");
         }
+        [HttpGet("Login")]
+        public async Task<IActionResult> Login(string email, string password)
+        {
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.Email == email && u.PasswordHash == password);
 
+            if (user == null)
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+
+            return Ok(new { user.UserId, user.Name, user.Email, user.Role });
+        }
         private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.UserId == id);
